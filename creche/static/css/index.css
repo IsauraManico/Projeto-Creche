@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500&display=swap');
+:root {
+    --principal: rgba(235, 4, 43, 0.6);
+    --green: #27ae60;
+    --black: #192a56;
+    --light-color: #666;
+    --sub-color: #8A2F1C;
+    --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+    text-transform: capitalize;
+    outline: none;
+    box-sizing: border-box;
+    transition: all .2s linear;
+    border: none;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+
+/*Working   */
+
+.sub-heading {
+    text-align: center;
+    color: var(--principal);
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+
+.heading {
+    text-align: center;
+    color: var(--black);
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+section:nth-child(even) {
+    background-color: #eee;
+}
+
+header .logo img {
+    width: 100px;
+    height: 100px;
+}
+
+.logo {
+    color: rgba(235, 4, 43, 0.6);
+    font-weight: 700;
+    letter-spacing: 0.5em;
+    font-size: 2em;
+}
+
+header .navbar a {
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    color: var(--light-color);
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+header .navbar a.active,
+header .navbar a:hover {
+    color: #fff;
+    background-color: var(--principal);
+}
+
+header .icons i,
+header .icons a {
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: var(--black);
+    border-radius: 50%;
+    background: #eee;
+}
+
+header .icons i:hover,
+header .icons a:hover {
+    color: #fff;
+    background: var(--principal);
+    transform: rotate(360deg);
+}
+
+header .icons #menu-bars {
+    display: none;
+}
+
+.yellow-space {
+    position: relative;
+    float: right;
+}
+
+.desenrolar {
+    background: linear-gradient(rgba(235, 4, 43, 0.6), rgba(0, 0, 0, 0.6)), url(../img/org.jpg) center/cover no-repeat fixed;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: stretch;
+}
+
+.titulo-principal {
+    font-size: 5em;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 15%;
+}
+
+.inscrecer {
+    margin-top: -22rem;
+    display: grid;
+    font-size: 1.7rem;
+    color: #fff;
+    background: rgba(235, 4, 43, 0.6);
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: .7rem 3rem;
+    letter-spacing: .1rem;
+}
+
+.inscrecer:hover {
+    background: var(--black);
+}
+
+
+/*
+Se as configurações que foram feita na section forem implementadas numa div, teremos uma sobreposição dos efeitos
+
+*/
+
+.yellow-space img {
+    width: 60%;
+    max-height: 70%;
+    float: right;
+    margin-block-end: auto;
+    margin-right: -20%;
+}
+
+
+/* Estilo dos motivos  */
+
+.about .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.about .row .image {
+    flex: 1 1 45rem;
+}
+
+.about .row .image img {
+    width: 100%;
+    min-height: 50%;
+    border-radius: 5%;
+}
+
+.about .row .content {
+    flex: 1 1 45rem;
+}
+
+.about .row .content h3 {
+    color: var(--black);
+    font-size: 3rem;
+    padding: .5rem 0;
+}
+
+.about .row .content p {
+    color: var(--light-color);
+    font-size: 1.5rem;
+    padding: .5rem 0;
+    line-height: 2;
+}
+
+.about .row .content .icons-containter {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    margin-top: .5rem;
+}
+
+.about .row .content .icons-containter .icons {
+    background: #eee;
+    border-radius: .5rem;
+    border: .1rem solid rgba(0, 0, 0, .2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex: 1 1 17rem;
+    padding: 1.5rem 1rem;
+}
+
+.about .row .content .icons-containter .icons i {
+    font-size: 2.5rem;
+    color: var(--principal);
+}
+
+.about .row .content .icons-containter .icons span {
+    font-size: 1.5rem;
+    color: var(--black);
+}
+
+
+/*  Footer style */
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+    padding: .5rem 0;
+    font-size: 1.5rem;
+    color: var(--black);
+}
+
+.footer .box-container .box a {
+    display: block;
+    padding: .5rem 0;
+    font-size: 1.5rem;
+    color: var(--light-color);
+}
+
+.footer .box-container .box a:hover {
+    color: var(--principal);
+    text-decoration: none;
+}
+
+.footer .credit {
+    text-align: center;
+    border-top: .1rem solid rgba(0, 0, 0, 0, .1);
+    font-size: 2rem;
+    color: var(--black);
+    padding: .5rem;
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.footer .credit span {
+    color: var(--principal);
+}
+
+
+/*  Excessão de programação */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.container .card {
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background: #fff;
+    margin: 30px 10px;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.container .card:hover {
+    height: 420px;
+}
+
+.container .card .ImgBox {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container .card .contentBx {
+    position: relative;
+    margin-top: -120px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.container .card:hover .contentBx {
+    visibility: visible;
+    opacity: 1;
+    margin-top: 15px;
+    transition-delay: 0.3s;
+    ;
+}
+
+.container .card .ImgBox img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+
+/* Cenário das divs 3Ds  */
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    transform-style: preserve-3d;
+    width: 100%;
+}
+
+section .card {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    margin: 10px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+section .card .box {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: 1s ease;
+}
+
+section .card:hover .box {
+    transform: rotateY(180deg);
+}
+
+section .card .box .ImgBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+section .card .box .ImgBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section .card .box .contentBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+}
+
+section .card .box .contentBx div {
+    transform-style: preserve-3d;
+    padding: 20px;
+    background: linear-gradient(45deg, #b30b0b, #181501);
+    transform: translateZ(100px);
+}
+
+section .card .box .contentBx div h2 {
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+section .card .box .contentBx div p {
+    color: #fff;
+    font-size: 12px;
+}
+
+
+/* Configuração do botão  */
+
+.btn {
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--black);
+    border-radius: .5rem;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:hover {
+    background: var(--principal);
+    letter-spacing: .1rem;
+}
+
+
+/* Responsividade */
+
+
+/*  Tornando responsivo  */
+
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+    header {
+        padding: 1rem 2rem;
+    }
+    section {
+        padding: 2rem;
+    }
+}
+
+@media (max-width :768px) {
+    header .icons #menu-bars {
+        display: inline-block;
+    }
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        border-bottom: .1rem solid rgba(0, 0, 0.2);
+        border-top: .1rem solid rgba(0, 0, 0.2);
+        padding: 1rem;
+        clip-path: polygon(0 0, 100% 0, 0 0);
+    }
+    header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    header .navbar a {
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background: #eee;
+    }
+    #search-form #search-box {
+        width: 90%;
+        margin: 0 1rem;
+    }
+    .home .home-slider .slide .content h3 {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 991px) {
+    html {
+        font-size: 50%;
+    }
+    .dishes .box-container .box img {
+        height: auto;
+        margin: 100%;
+    }
+    .order form .inputBox .input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+    .dishes .box-container .box img {
+        height: auto;
+        margin: 100%;
+    }
+    .order form .inputBox .input {
+        width: 100%;
+    }
+}

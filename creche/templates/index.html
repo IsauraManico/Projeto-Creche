@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/index.css')}}">
+
+
+
+
+
+    <title>Yusa Creche</title>
+</head>
+
+<body>
+
+
+    <!-- First section to header -->
+    <header>
+
+        <a href="#" class="logo"> YUSA </a>
+        <nav class="navbar">
+            <!-- Thinking if should be better build other -->
+            <a href="#index">home</a>
+            <a href="/eventos">Eventos</a>
+            <a href="/sobre"> Sobre</a>
+            <a href="/"> Contacto</a>
+            <a href="/">
+            Galeria
+            </a>
+            <a href="/entrar" class="active"> Login</a>
+
+        </nav>
+
+
+
+
+    </header>
+
+    <section class="desenrolar">
+
+        <p class="titulo-principal"> A criatividade perto do seu filho ! </p>
+        <br>
+
+        <button class="inscrecer"> <a href="/begin" class="active"> Inscrever-se agora</a></button>
+
+    </section>
+
+
+    <div class="testar-limites">
+
+
+
+        <div class="primer-space-image">
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <section class="about section " id="about">
+        <h2 class="section-title">Oferecemos os melhores cuidados para o teu filho</h2>
+        <div class="container">
+            <div class="card">
+                <div class="ImgBox">
+
+                    <img src="{{ url_for ('static', filename='/img/entrega.jpg')}}">
+                </div>
+                <div class="contentBx">
+
+                    <h3>Aulas praticas </h3>
+                    <p>Desenho , Quebra cabeças.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="ImgBox">
+                    <img src="{{ url_for ('static', filename='/img/img2.jpg')}}">
+                </div>
+                <div class="contentBx">
+
+                    <h3>Acompanhamento constante </h3>
+                    <p>Treinamento cognitivo, Desenvolvimento de habilidades natas
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="ImgBox">
+                    <img src="{{ url_for ('static', filename='/img/child.jpg')}}">
+                </div>
+                <div class="contentBx">
+
+                    <h3>Sonhos </h3>
+                    <p>Desenho paisagem, E futuro feito no presente .
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about" id="about">
+
+        <h3 class="sub-heading"> O futuro do teu filho em boas mãos </h3>
+        <h1 class="heading"> </h1>
+
+        <div class="row">
+
+
+            <div class="content">
+                <h3> Desenvolvemos a criatividade do teu filho ! </h3>
+                <p> Conforto, credibilidade e agilidade
+                </p>
+                <p> A disposicao perto de si!
+
+
+            </div>
+
+            <div class="image">
+                <img src="{{ url_for ('static', filename='/img/duas.jpg')}}" alt="Error Could " />
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de uma apresentação completa -->
+
+    <section class="work section" id="work">
+        <section>
+            <div class="card">
+                <div class="box">
+                    <div class="ImgBox">
+                        <img src="{{ url_for ('static', filename='/img/kiddin.jpg')}}" alt="Error colud not found the picture">
+                    </div>
+                    <div class="contentBx">
+                        <div>
+                            <h2>Criatividade </h2>
+                            <p>O desenho das actividades simples, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <div class="ImgBox">
+                        <img src="{{ url_for ('static', filename='/img/dream.jpg')}}">
+                    </div>
+                    <div class="contentBx">
+                        <div>
+                            <h2>Crescimento especulativo </h2>
+                            <p>Conhecimento enraizado, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="box">
+                    <div class="ImgBox">
+                        <img src="{{ url_for ('static', filename='/img/workke.jpg')}}">
+                    </div>
+                    <div class="contentBx">
+                        <div>
+                            <h2>Post Title </h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+    </section>
+
+
+
+
+
+    <section class="footer">
+
+
+
+
+        <div class="credit"> copyright @ 2022 by <span> Isaura Manico </span></div>
+    </section>
+
+    <script src="{{ url_for ('static', filename='/js/index.js')}}"></script>
+
+</body>
+
+</html>
